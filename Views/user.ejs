@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/user.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    
+</head>
+<body>
+        <div class="inner_content">
+            <div class="nav_tab">
+                <div class="all">
+                    <div class="image_and_desc">
+                        
+                    </div>
+                    <div class="little_desc">
+                        Hello User!
+                    </div>
+                    <i class="logout"><a href="./login">Logout</a></i> <i class="logout"><a href="./home">Home page</a></i>
+                </div>
+                <ul>
+                    <li><a href="#">Cart items</a></li>
+                    <li><a href="#">My orders</a></li>
+                </ul>
+            </div>
+            <div class="content_sec">
+                <% cart.forEach(function(items){  %>
+                <div class="each_indiv">
+                <div class="image_indiv"></div>
+                <div class="cart_name"><%= items.namee %> </div>
+                <div class="cart_price"><%= items.price %> </div>
+                <input type="number" name="cartNum" value="20" class="cartVal">
+                <div class="all_buttons">
+                    <button class="delete">REMOVE ITEM</button>
+                </div>
+                </div>
+                <% }); %>
+            </div>
+            <div class="buy_now_div">
+                <div class="text_cont">
+                <h4 class="total_title">Total amount:<span class="total_price">$50</span></h4>
+                <h4 class="total_title">Total items:<span class="total_price">20</span></h4>
+                </div>
+                <a href="#"><button>BUY NOW</button></a>
+        
+        </div>
+                        
+
+                </div>
+            </div>
+        </div>
+        <script src="/css/javascript/user.js"></script>
+</body>
+</html>

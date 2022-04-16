@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple modal</title>
+    <style>
+        body{
+            position: relative;
+
+        }
+        .container_modal{
+                width:100%;
+                height: 100%;
+                background-color:gray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* position: absolute; */
+                z-index: 4;
+        }
+        h1{
+            position: absolute;
+        }
+        .modal_cont{
+                 border:2px solid black;
+                 width:24em;
+                 height:30em;
+                 background-color: rgb(216, 197, 197);
+                 margin: 40px;
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 align-items:center;
+        }
+        .img_box{
+            width: 14em;
+            height:14em;
+            border:2px solid black;
+            margin-top: 4px;
+            border-radius: 50%;
+            background-image: url('/public/img/FB_IMG_16041718789400451.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello </h1>
+     <div class="container_modal">
+        <div class="modal_cont">
+            <div class="img_box"></div>
+            <h1>Item title</h1>
+            <span class="item_price">$100</span>
+            <p>
+                Item description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe consequuntur quaerat ratione soluta repellendus eius debitis! Illum ea sint facilis reprehenderit laboriosam iusto. Eum, in! Fuga omnis autem unde?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, consequuntur ratione atque, nostrum aliquid vitae nulla ullam corporis doloribus, ut illum vel mollitia saepe voluptatem qui consectetur unde modi culpa.
+
+            </p>
+        </div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+so...i want to build an ecommerce  website
+
+ill create {num} folders
+
+      databases
+1. for databases...which will connect to the admin panel, 
+and will also store the details of our registered users
+also for authentication
+
+2.  //all static files called views
+ill create a "views" folder which will store all of our html css and javascript codes/files
+
+3.   //routes
+this folder will house all our get, post, put, abd delete commands
+they will perform routing operations
+
+4.    //our server
+our server wont be in any created folder
+it would be in the parent folder

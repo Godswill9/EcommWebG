@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <img src="img/FB_IMG_16164929014627354.jpg">
+        <div class="firstForm">
+            <form method="POST" action="/auth" class="cont1" >
+            <h3 class="who"> Who do we have here?</h3>
+           <label>First name
+            <input required   type="text" name="firstname" placeholder="Enter your name...">
+            </label>
+            <br>
+            <br>
+            
+            <label>Surname
+                <input required type="text" name="surname" placeholder="Enter your surname...">
+                </label>
+                <br>
+                <br> 
+
+                <label class="all_gender">Gender
+                    <input required type="radio" name="gender" class="radio" >MALE 
+                    <input required type="radio" name="gender" class="radio">FEMALE
+                    </label>
+                    <br>
+                    <br> 
+
+            <label>
+                Phone number
+                <input required type="number" name="phone" placeholder="Enter your phone number...">
+            </label>
+            <br>
+            <br>
+            <label>
+               
+                Email account
+                <input required type="email" name="email" placeholder=" Your Email...">
+            </label>
+            <br>
+            <br>
+            <label>
+                Password
+                <input required type="password" name="password" placeholder="Your password...">
+            </label>
+            <br>
+            <br>
+            <span>Login to my account <button type="submit">Login</button></span>
+            <!-- <span>Proceed to login... <a href="./login" type="Submit">Next</a></span> -->
+        </form>
+
+        </div>
+     
+</body>
+</html>
