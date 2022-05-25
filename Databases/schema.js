@@ -1,5 +1,7 @@
 const express=require('express')
 const Mongoose=require('mongoose')
+const passportLocalMongoose=require('passport-local-mongoose')
+
 const userSchema= new Mongoose.Schema({
     firstname:{
         type:Mongoose.SchemaTypes.String,
@@ -22,5 +24,6 @@ const userSchema= new Mongoose.Schema({
          required:true
      }
 })
+
 
 module.exports=Mongoose.model('auth', userSchema)

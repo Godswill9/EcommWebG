@@ -1,0 +1,15 @@
+POST http://localhost:3000/auth
+
+  {
+    "firstname": "To",
+    "surname": "jerry",
+    "phone": 1234,
+    "email": "jerry@12.com",
+    "password":"123dftyh"
+  }
+
+###
+
+GET http://localhost:3000/login
+Authorization: Bearer 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNzIzN2JlZjYyZGIyMGU1NDYyZjIyZiIsImlhdCI6MTY1MjM2ODAyMSwiZXhwIjoxNjUyMzY4MTAxfQ.eE5lSpcn3k1l2cokoZrXKsguHwooX9q8QtROZVPGRUg
